@@ -23,7 +23,7 @@ terraform plan
 terraform apply
 ```
 
-After apply, use the output `elb_dns` to access the Nginx welcome page through the ALB.
+After apply, use the output `elb_dns` to access the Nginx page through the ALB.
 
 ## Cleanup
 ```bash
