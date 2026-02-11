@@ -6,6 +6,9 @@ resource "aws_instance" "web_server" {
   vpc_security_group_ids = [aws_security_group.web_server.id]
   user_data              = file("user_data.sh")
   iam_instance_profile   = aws_iam_instance_profile.web_server.name
+
+  # Ensure the EC2 instances are created after the VPC and nat_gateway
+  depends_on = [ module.alb_lab_vpc ]
 }
 
 data "aws_ami" "ubuntu" {
