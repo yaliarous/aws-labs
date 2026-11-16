@@ -1,11 +1,11 @@
 variable "region" {
   type    = string
-  default = "us-east-1"
+  default = "eu-west-1"
 }
 
 variable "instance_type" {
   type    = string
-  default = "t2.micro"
+  default = "t3.micro"
 }
 
 variable "instance_count" {
@@ -15,5 +15,5 @@ variable "instance_count" {
 
 variable "enable_deletion_protection" {
   type    = bool
-  default = true
+  default = false
 }

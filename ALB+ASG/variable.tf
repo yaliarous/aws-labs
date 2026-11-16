@@ -1,6 +1,6 @@
 variable "region" {
   type    = string
-  default = "us-east-1"
+  default = "eu-west-1"
 }
 
 variable "instance_type" {
@@ -15,7 +15,7 @@ variable "instance_count" {
 
 variable "enable_deletion_protection" {
   type    = bool
-  default = true
+  default = false
 }
 
 variable "asg_max_size" {
